@@ -4,15 +4,14 @@ import './main.less';
 
 import angular from 'angular';
 import ngRouter from 'angular-route';
-import routing from './routing';
-
-import RootCtrl from './shared/RootCtrl';
-import metaDataService from './shared/metaDataService';
-
-import pages from './pages/pages';
 
 
-angular.module('app', [ngRouter, pages])
-    .service('metaDataService', metaDataService)
-    .controller('RootCtrl', RootCtrl)
-    .config(routing);
+import pages from './pages/pagesModule';
+import shared from './shared/sharedModule';
+
+
+angular.module('app', [
+    ngRouter,
+    shared,
+    pages
+]);

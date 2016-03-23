@@ -11,7 +11,7 @@ export default function pagesRouter($routeProvider) {
         })
         .when('/about', {
             templateUrl: '/partials/about.html',
-            // controller: 'MainPageCtrl',
-            // controllerAs: 'mainpage',
+            controller: 'AboutPageCtrl',
+            controllerAs: 'aboutpage',
         });
 }
