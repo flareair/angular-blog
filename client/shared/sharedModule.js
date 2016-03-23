@@ -5,11 +5,11 @@ import ngRouter from 'angular-route';
 
 import sharedRouter from './sharedRouter';
 
-import metaDataService from './metaDataService';
-import menuService from './menuService';
+import metaDataService from './services/metaDataService';
+import menuService from './services/menuService';
 
-import RootCtrl from './RootCtrl';
-import MainMenuCtrl from './MainMenuCtrl';
+import RootCtrl from './controllers/RootCtrl';
+import MainMenuCtrl from './controllers/MainMenuCtrl';
 
 export default angular.module('app.shared', [ngRouter])
     .config(sharedRouter)
