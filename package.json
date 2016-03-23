@@ -1,16 +1,19 @@
 {
-  "name": "webpack_test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "angular-blog",
+  "version": "0.0.0",
+  "description": "Blog using angular, express and mongodb",
+  "main": "app.js",
   "scripts": {
     "server": "webpack-dev-server --content-base public/ --history-api-fallback --inline --progress"
   },
   "author": "flare",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "angular": "^1.5.2",
     "angular-route": "^1.5.2",
+
+  },
+  "devDependencies": {
     "autoprefixer": "^6.3.4",
     "babel-core": "^6.7.2",
     "babel-loader": "^6.2.4",
