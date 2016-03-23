@@ -1,14 +1,14 @@
 'use strict';
 
 export default class MainMenuCtrl {
-    constructor($location) {
-        this.location = $location;
+    constructor(menuService) {
+        this.menuService = menuService;
     }
 
     isActive(url) {
         // need to improve
-        return this.location.path() === url ? 'active' : '';
+        return this.menuService.getActiveItem() === url ? 'active' : '';
     }
 }
 
-MainMenuCtrl.$inject = ['$location'];
+MainMenuCtrl.$inject = ['menuService'];

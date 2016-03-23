@@ -1,10 +1,11 @@
 'use strict';
 
 export default class AboutPageCtrl {
-    constructor(metaDataService) {
+    constructor(metaDataService,menuService) {
         this.title = 'About page';
         metaDataService.setPageTitle(this.title);
+        menuService.setActiveItem('/about');
     }
 }
 
-AboutPageCtrl.$inject = ['metaDataService'];
+AboutPageCtrl.$inject = ['metaDataService', 'menuService'];
