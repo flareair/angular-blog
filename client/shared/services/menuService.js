@@ -3,6 +3,16 @@
 export default class menuService {
     constructor() {
         this.activeItem = '/';
+        this.menuItems = [
+            {
+                link: '/',
+                name: 'Home',
+            },
+            {
+                link: '/about',
+                name: 'About',
+            },
+        ];
     }
 
     getActiveItem() {

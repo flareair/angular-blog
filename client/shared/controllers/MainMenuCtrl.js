@@ -3,6 +3,7 @@
 export default class MainMenuCtrl {
     constructor(menuService) {
         this.menuService = menuService;
+        this.menuItems = menuService.menuItems;
     }
 
     isActive(url) {
