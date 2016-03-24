@@ -4,17 +4,23 @@ import app from '../../app';
 describe('MainMenu controller', () => {
     let MainMenuCtrl;
     let stubMenuService;
-
+    let sandbox;
     beforeEach(() => {
+        sandbox = sinon.sandbox.create();
         angular.mock.module(app);
         angular.mock.inject(($controller) => {
-            stubMenuService = sinon.stub({
+            stubMenuService = sandbox.stub({
                 getActiveItem: () => {}
             });
             MainMenuCtrl = $controller('MainMenuCtrl', {
                 menuService: stubMenuService
             });
         });
+    });
+
+    afterEach(function() {
+      // Cleanup the sandbox to remove all the stubs
+      sandbox.restore();
     });
 
     describe('isActive() method', () => {
