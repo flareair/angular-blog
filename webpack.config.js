@@ -6,7 +6,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
-    entry: './client/app.js',
+    context: __dirname + '/client',
+    entry: './app.js',
     output: {
         path: __dirname + '/public',
         filename: 'build.js',

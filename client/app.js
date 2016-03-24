@@ -10,8 +10,8 @@ import pages from './pages/pagesModule';
 import shared from './shared/sharedModule';
 
 
-angular.module('app', [
+export default angular.module('app', [
     ngRouter,
     shared,
     pages
-]);
+]).name;
