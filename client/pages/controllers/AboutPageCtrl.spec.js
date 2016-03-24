@@ -5,7 +5,7 @@ describe('AboutPage controller', () => {
     let AboutPageCtrl;
 
     beforeEach(() => {
-        angular.mock.module('app');
+        angular.mock.module(app);
         angular.mock.inject(($controller) => {
             AboutPageCtrl = $controller('AboutPageCtrl');
         });

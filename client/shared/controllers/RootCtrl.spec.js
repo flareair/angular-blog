@@ -5,7 +5,7 @@ describe('Root controller', () => {
     let RootCtrl;
 
     beforeEach(() => {
-        angular.mock.module('app');
+        angular.mock.module(app);
         angular.mock.inject(($controller) => {
             RootCtrl = $controller('RootCtrl');
         });
