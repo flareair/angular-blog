@@ -11,7 +11,7 @@ describe('Root controller', () => {
         });
     });
 
-    it('Should have right metadata property', () => {
+    it('should have right metadata property', () => {
         RootCtrl.metaData.should.exist;
         RootCtrl.metaData.should.be.an('object');
     });
