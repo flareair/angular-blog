@@ -1,7 +1,7 @@
+'use strict';
 import app from '../../app';
 
 describe('Root controller', () => {
-'use strict';
     let RootCtrl;
 
     beforeEach(() => {

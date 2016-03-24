@@ -1,7 +1,7 @@
+'use strict';
 import app from '../../app';
 
 describe('MainPage controller', () => {
-'use strict';
     let MainPageCtrl;
 
     beforeEach(() => {

@@ -1,7 +1,7 @@
+'use strict';
 import app from '../../app';
 
 describe('MainMenu controller', () => {
-'use strict';
     let MainMenuCtrl;
     let stubMenuService;
 
