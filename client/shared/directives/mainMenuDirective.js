@@ -3,7 +3,7 @@
 export default function mainMenu() {
     return {
         restrict: 'E',
-        templateUrl: 'partials/directives/mainmenu.html',
+        templateUrl: 'shared/partials/directives/mainmenu.html',
         controller: 'MainMenuCtrl',
         controllerAs: 'menu'
     };

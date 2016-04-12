@@ -8,6 +8,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
 var pagesRouter = require('./pages/pagesRouter');
+var sharedRouter = require('./shared/sharedRouter');
 // var userRouter = require('./modules/user/server/UserRouter');
 
 var app = express();
@@ -28,7 +29,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.use('/', pagesRouter);
+app.use('/pages', pagesRouter);
+app.use('/', sharedRouter);
 // app.use('/', coreRouter);
 
 // catch 404 and forward to error handler
