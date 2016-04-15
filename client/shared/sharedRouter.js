@@ -5,7 +5,7 @@ routing.$inject = ['$routeProvider', '$locationProvider'];
 export default function routing($routeProvider, $locationProvider) {
     $routeProvider
         .when('/404', {
-            templateUrl: '/shared/partials/404',
+            templateUrl: '/shared/partials/404.html',
             controller: 'NotFoundPageCtrl',
             controllerAs: 'notfound',
         })

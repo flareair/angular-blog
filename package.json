@@ -4,7 +4,10 @@
   "description": "Blog using angular, express and mongodb",
   "main": "app.js",
   "scripts": {
-    "server": "webpack-dev-server --content-base public/ --history-api-fallback --inline --progress"
+    "server": "webpack-dev-server --content-base public/ --history-api-fallback --inline --progress",
+    "test-server": "mocha $(find ./server -name '*.spec.js' ! -ipath '*node_modules*')",
+    "test-client": "karma start",
+    "test-e2e": "protractor"
   },
   "author": "flare",
   "license": "MIT",

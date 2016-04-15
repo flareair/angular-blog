@@ -12,7 +12,7 @@ const sharedController = require('./sharedController');
 
 router.get('/shared/partials/directives/:name', sharedController.renderDirective);
 
-router.get('/shared/partials/404', sharedController.render404);
+router.get('/shared/partials/404.html', sharedController.render404);
 router.get('/*', sharedController.renderDefaultLayout);
 
 
